@@ -1,0 +1,289 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-size: 90px;
+  text-align: center;
+  line-height: 0.5px;
+}
+
+.headline {
+  font-size: 42px;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 1px;
+}
+
+.description {
+  color: black;
+  position:relative;
+  top:150px;
+  left:300px;
+}
+
+.form_contents {
+  margin: 10px;
+}
+.logout{
+  align: right;
+}
+.body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: #D3D0D0;
+}
+
+.b1 {
+  font: canva sans;
+  background-color: black;
+  float: left;
+  width: 12%;
+  color: white;
+  padding: 10px;
+  margin: 7px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.b2 {
+  background-color: black;
+  float: right;
+  width: 12%;
+  color: white;
+  padding: 10px;
+  margin: 7px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login {
+  background-color: #00BF63;
+  width: 100%;
+  color: white;
+  padding: 15px;
+  margin: 7px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 2px solid green;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  margin: 10px 5px;
+}
+
+.container {
+  width: 950px;
+  height: 325px;
+  left: 50%;
+  color: white;
+  top: 50%;
+  border-radius: 10px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  padding: 7px;
+  background-color: #004AAD;
+}
+
+.contain {
+  width: 950px;
+  height: 460px;
+  left: 50%;
+  color: white;
+  top: 50%;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 7px;
+  background-color: #004AAD;
+}
+.check-in {
+  list-style-type: none;
+  margin: 10px;
+  padding: 1.5%;
+  width: 10%;
+  height: 10%;
+  background-color: #545454;
+  text-decoration: none;
+}
+.button1{
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  color:white;
+  background-color: #00BF63;
+}
+.button2{
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  color:white;
+  background-color: #FF3131;
+}
+.button3{
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  color:white;
+  background-color: #068FFF;
+}
+.button4{
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  color:white;
+  background-color: #000000;
+}
+
+.button5 {
+  background-color: #04AA6D;
+  border: none;
+  width: 600px;
+  height: 350px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 56px;
+  margin: 4px 2px;
+}
+
+.button5 {border-radius: 50%;}
+
+.button6 {
+  background-color: red;
+  border: none;
+  width: 600px;
+  height: 350px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 56px;
+  margin: 4px 2px;
+}
+
+.button6 {border-radius: 50%;}
+
+.settings_menu{
+  list-style-type: none;
+  background-color: #545454;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: 50%;
+  text-align: center;
+}
+.settings_button{
+  font-size: 25px;
+  background-color: black;
+  color: white;
+}
+
+.delete{
+  font-size: 25px;
+  background-color: red;
+  color: white;
+}
+/*
+.worklog_navbar{
+  list-style-type: none;
+  position: absolute;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 1.5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  height: 10%;
+  background-color: #545454;
+  text-decoration: none;
+  text-align: center;
+}
+*/
+
+.logocenter{
+  display: block;
+  margin-right: auto;
+  width: 45%;
+}
+.priv{
+  font-size: 17px;
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+}
+
+.logo img {
+  margin-top: 5px;
+  max-width: 73%;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.privcontent p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.privacy
+{
+  font-size: 40px;
+}
+
+.container1 {
+  width: 950px;
+  height: 380px;
+  left: 50%;
+  color: white;
+  top: 60%;
+  border-radius: 10px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #004AAD;
+}
