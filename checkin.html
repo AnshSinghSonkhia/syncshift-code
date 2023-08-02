@@ -4,6 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
   <title>Check-In Page</title>
   <link rel="icon" type="image/x-icon" href="favicon.jpg">
 </head>
@@ -31,7 +32,64 @@
    <button class="button1">Settings</button>
   </div>
   -->
-<center>
-  <button class="button button5">Check In</button>
-</center>
+<!--
+  <center class="current" onclick="toggleVisibility()">
+    <button class="button button5">Check In</button>
+  </center>
+  -->
+
+  <div class="items-center justify-center w-full h-full bg-gray-100 current" onclick="toggleVisibility()">
+
+    <div
+      class="flex items-center justify-center w-64 h-64 font-medium text-white text-3xl bg-[#04a96d] rounded-full mx-auto my-auto">
+      Check In
+    </div>
+
+  </div>
+
+  <div class="hidden bg-gray-100 later">
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="p-8 bg-white rounded-lg shadow-md">
+        <h1 class="mb-6 text-4xl font-bold">Task Time Counter</h1>
+        <div class="flex items-center mb-4">
+          <input type="text" id="taskName" class="flex-1 px-4 py-2 border border-gray-400 rounded-l-md"
+            placeholder="Enter task name...">
+          <button id="startStopBtn" class="px-4 py-2 text-white bg-green-500 rounded-r-md">Check in</button>
+        </div>
+        <div id="timerDisplay" class="mb-4 text-5xl font-bold">00:00:00</div>
+        <button id="stopBtn" class="hidden px-4 py-2 text-white bg-red-500 rounded-md">Check Out</button>
+        <p class="text-sm" id="startDateTime"></p>
+        <div class="mt-6">
+          <h2 class="mb-2 text-xl font-bold">WorkLog</h2>
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="px-4 py-2">Task</th>
+                <th class="px-4 py-2">Date & Day Started</th>
+                <th class="px-4 py-2">Time Started On</th>
+                <th class="px-4 py-2">Time Ended</th> <!-- Renamed column to "Time Ended" -->
+                <th class="px-4 py-2">Date Ended</th>
+                <th class="px-4 py-2">Time Spent</th> <!-- Renamed column to "Time Spent" -->
+              </tr>
+            </thead>
+            <tbody id="taskHistoryTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
 </body>
+
+  <script>
+  function toggleVisibility() {
+    // Find both div elements using their classes
+    const currentDiv = document.querySelector('.current');
+    const laterDiv = document.querySelector('.later');
+
+    // Toggle the "hidden" class for both div elements
+    currentDiv.classList.toggle('hidden');
+    laterDiv.classList.toggle('hidden');
+  }
+</script>
